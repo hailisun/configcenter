@@ -7,7 +7,7 @@ management:
     endpoints:
         web:
             exposure:
-                include: refresh,health,info,bus-refresh
+                include: refresh,health,info
 spring:
     rabbitmq:
         host: 127.0.0.1
