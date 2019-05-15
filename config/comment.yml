@@ -1,0 +1,18 @@
+server:
+  port: 8765
+spring:
+  application:
+    name: comment
+management:
+    endpoints:
+        web:
+            exposure:
+                include: refresh,health,info
+spring:
+    rabbitmq:
+        host: 127.0.0.1
+        port: 15672
+        username: guest
+        password: guest
+        virtualHost: /
+        publisherConfirms: true
