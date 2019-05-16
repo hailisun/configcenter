@@ -1,14 +1,10 @@
-
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/postgres
-    username: postgres
-    password: 123456ok
-    driverClassName: org.postgresql.Driver
-spring:
-  jpa:
-    properties:
-      hibernate:
-        dialect: org.hibernate.dialect.PostgreSQLDialect
-        hbm2ddl:
-          auto: update
+    druid:
+      url: jdbc:postgresql://localhost:5432/postgres
+      username: postgres
+      password: postgres
+      driver-class-name: org.postgresql.Driver
+      stat-view-servlet:
+        login-username: admin
+        login-password: admin
